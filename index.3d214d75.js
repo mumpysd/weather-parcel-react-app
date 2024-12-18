@@ -2956,12 +2956,10 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 var _reactRouter = require("react-router");
 var _about = require("./src/About");
 var _aboutDefault = parcelHelpers.interopDefault(_about);
-var _cityList = require("./src/CityList");
-var _cityListDefault = parcelHelpers.interopDefault(_cityList);
+var _cityInfo = require("./src/CityInfo");
+var _cityInfoDefault = parcelHelpers.interopDefault(_cityInfo);
 var _home = require("./src/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
-var _cityDetails = require("./src/CityDetails");
-var _cityDetailsDefault = parcelHelpers.interopDefault(_cityDetails);
 const root = document.getElementById("root");
 (0, _client.createRoot)(root).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.BrowserRouter), {
     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Routes), {
@@ -2969,7 +2967,7 @@ const root = document.getElementById("root");
             path: "/",
             element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
                 fileName: "index.js",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 35
             }, void 0),
             children: [
@@ -2977,73 +2975,59 @@ const root = document.getElementById("root");
                     index: true,
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                         fileName: "index.js",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 35
                     }, void 0)
+                }, void 0, false, {
+                    fileName: "index.js",
+                    lineNumber: 16,
+                    columnNumber: 13
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                    path: "/city-info",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
+                        path: ":cityName",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cityInfoDefault.default), {}, void 0, false, {
+                            fileName: "index.js",
+                            lineNumber: 18,
+                            columnNumber: 49
+                        }, void 0)
+                    }, void 0, false, {
+                        fileName: "index.js",
+                        lineNumber: 18,
+                        columnNumber: 16
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "index.js",
                     lineNumber: 17,
                     columnNumber: 13
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                    path: "/city-list",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                            index: true,
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cityListDefault.default), {}, void 0, false, {
-                                fileName: "index.js",
-                                lineNumber: 19,
-                                columnNumber: 38
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "index.js",
-                            lineNumber: 19,
-                            columnNumber: 16
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
-                            path: ":cityName",
-                            element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cityDetailsDefault.default), {}, void 0, false, {
-                                fileName: "index.js",
-                                lineNumber: 20,
-                                columnNumber: 49
-                            }, void 0)
-                        }, void 0, false, {
-                            fileName: "index.js",
-                            lineNumber: 20,
-                            columnNumber: 16
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "index.js",
-                    lineNumber: 18,
-                    columnNumber: 13
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouter.Route), {
                     path: "/about",
                     element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _aboutDefault.default), {}, void 0, false, {
                         fileName: "index.js",
-                        lineNumber: 22,
+                        lineNumber: 20,
                         columnNumber: 43
                     }, void 0)
                 }, void 0, false, {
                     fileName: "index.js",
-                    lineNumber: 22,
+                    lineNumber: 20,
                     columnNumber: 13
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "index.js",
-            lineNumber: 16,
+            lineNumber: 15,
             columnNumber: 10
         }, undefined)
     }, void 0, false, {
         fileName: "index.js",
-        lineNumber: 15,
+        lineNumber: 14,
         columnNumber: 8
     }, undefined)
 }, void 0, false, {
     fileName: "index.js",
-    lineNumber: 14,
+    lineNumber: 13,
     columnNumber: 5
 }, undefined));
 
@@ -3052,7 +3036,7 @@ const root = document.getElementById("root");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./index.css":"giGSC","./src/App":"2kQhy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router":"dXVwI","./src/About":"7xYvO","./src/CityList":"87STC","./src/Home":"fGRvi","./src/CityDetails":"eSdBM","react-dom/client":"lOjBx"}],"iTorj":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./index.css":"giGSC","./src/App":"2kQhy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router":"dXVwI","./src/About":"7xYvO","./src/Home":"fGRvi","react-dom/client":"lOjBx","./src/CityInfo":"ggFpe"}],"iTorj":[function(require,module,exports,__globalThis) {
 'use strict';
 module.exports = require("ee51401569654d91");
 
@@ -15093,37 +15077,6 @@ $RefreshReg$(_c, "About");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"87STC":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$5d55 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5d55.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const CityList = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            children: "City List"
-        }, void 0, false, {
-            fileName: "src/CityList.js",
-            lineNumber: 4,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false);
-};
-_c = CityList;
-exports.default = CityList;
-var _c;
-$RefreshReg$(_c, "CityList");
-
-  $parcel$ReactRefreshHelpers$5d55.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
 },{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fGRvi":[function(require,module,exports,__globalThis) {
 var $parcel$ReactRefreshHelpers$8667 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -15134,11 +15087,63 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactRouter = require("react-router");
+var _s = $RefreshSig$();
 const Home = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: "Home Section"
-    }, void 0, false);
+    _s();
+    const [cityName, setCityName] = (0, _react.useState)("");
+    const [cityInfo, setCityInfo] = (0, _react.useState)([]);
+    const navigate = (0, _reactRouter.useNavigate)();
+    const fetchWeatherDetailsCityWise = ()=>{
+        const appId = "6e23f5c64063d06090bcc24971fd0318";
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${appId}`;
+        fetch(url).then((response)=>response.json()).then((data)=>{
+            setCityInfo(data);
+            console.log(data);
+            navigate(`/city-info/${cityName.toLowerCase()}`, {
+                state: data
+            });
+        }).catch((error)=>{
+            console.log(error);
+        });
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "text-center my-6 bg-gray-100 p-10",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                className: "text-xs p-2 outline-none border-2 border-blue-950 w-[400]",
+                placeholder: "Enter City Name",
+                value: cityName,
+                onChange: (e)=>setCityName(e.target.value)
+            }, void 0, false, {
+                fileName: "src/Home.js",
+                lineNumber: 29,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "p-2.5 bg-blue-950 text-slate-50 w-200 text-xs",
+                type: "button",
+                onClick: fetchWeatherDetailsCityWise,
+                children: "Get Info"
+            }, void 0, false, {
+                fileName: "src/Home.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Home.js",
+        lineNumber: 28,
+        columnNumber: 9
+    }, undefined);
 };
+_s(Home, "5Io9j6BbSTWYKbL3ceEp4fzHr9s=", false, function() {
+    return [
+        (0, _reactRouter.useNavigate)
+    ];
+});
 _c = Home;
 exports.default = Home;
 var _c;
@@ -15149,38 +15154,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eSdBM":[function(require,module,exports,__globalThis) {
-var $parcel$ReactRefreshHelpers$8c0d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$8c0d.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-const CityDetails = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            children: "City Details"
-        }, void 0, false, {
-            fileName: "src/CityDetails.js",
-            lineNumber: 4,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false);
-};
-_c = CityDetails;
-exports.default = CityDetails;
-var _c;
-$RefreshReg$(_c, "CityDetails");
-
-  $parcel$ReactRefreshHelpers$8c0d.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports,__globalThis) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router":"dXVwI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lOjBx":[function(require,module,exports,__globalThis) {
 'use strict';
 var m = require("aaccff5d309d9239");
 var i = m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
@@ -36704,6 +36678,169 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === 'function') __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}]},["aQL8O","dIizP","bB7Pu"], "bB7Pu", "parcelRequire94c2")
+},{}],"ggFpe":[function(require,module,exports,__globalThis) {
+var $parcel$ReactRefreshHelpers$01b3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$01b3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _reactRouter = require("react-router");
+var _s = $RefreshSig$();
+const CityInfo = ()=>{
+    _s();
+    const location = (0, _reactRouter.useLocation)();
+    const cityInfo = location.state;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "bg-gray-50 text-slate-800 p-3 m-3",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-sm mb-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold",
+                            children: "City Name: "
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 11,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: cityInfo.name
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 12,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CityInfo.js",
+                    lineNumber: 10,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-sm mb-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold",
+                            children: "Lon: "
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 15,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: cityInfo.coord.lon
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 16,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CityInfo.js",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-sm mb-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold",
+                            children: "Lat: "
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 19,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: cityInfo.coord.lat
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 20,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CityInfo.js",
+                    lineNumber: 18,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-sm mb-2",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold",
+                            children: "Type: "
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 23,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: cityInfo.weather[0].main
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 24,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CityInfo.js",
+                    lineNumber: 22,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                    className: "text-sm",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            className: "font-bold",
+                            children: "Humidity: "
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 27,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            children: cityInfo.main.humidity
+                        }, void 0, false, {
+                            fileName: "src/CityInfo.js",
+                            lineNumber: 28,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/CityInfo.js",
+                    lineNumber: 26,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/CityInfo.js",
+            lineNumber: 9,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false);
+};
+_s(CityInfo, "pkHmaVRPskBaU4tMJuJJpV42k1I=", false, function() {
+    return [
+        (0, _reactRouter.useLocation)
+    ];
+});
+_c = CityInfo;
+exports.default = CityInfo;
+var _c;
+$RefreshReg$(_c, "CityInfo");
+
+  $parcel$ReactRefreshHelpers$01b3.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router":"dXVwI"}]},["aQL8O","dIizP","bB7Pu"], "bB7Pu", "parcelRequire94c2")
 
 //# sourceMappingURL=index.3d214d75.js.map
