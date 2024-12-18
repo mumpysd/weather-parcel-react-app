@@ -1,4 +1,15 @@
 import React from "react";
-import ReactDom from "react-dom";
+import ReactDOM from "react-dom";
 
-ReactDom.render(<h1>Hello World</h1>, document.getElementById("root"));
+// Create a simple component
+function Welcome() {
+    return (
+        <h1>Welcome to React!</h1>
+    );
+  }
+
+// Render the Welcome component in the "root" div
+ReactDOM.render(
+    <Welcome />, 
+    document.getElementById('root')
+);
